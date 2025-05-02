@@ -16,7 +16,10 @@ function createGrid(numSquaresPerSide) {
         div.classList.add("square")
         div.style.cssText = `width: ${sideLength}%; height: ${sideLength}%;`
         div.addEventListener("mouseover", () => {
-            div.style.backgroundColor = "blue"
+            const rVal = Math.floor(Math.random() * 255)
+            const gVal = Math.floor(Math.random() * 255)
+            const bVal = Math.floor(Math.random() * 255)
+            div.style.backgroundColor = `rgb(${rVal},${gVal},${bVal})`
         })
 
         container.appendChild(div)
