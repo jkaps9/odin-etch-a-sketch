@@ -19,7 +19,15 @@ function createGrid(numSquaresPerSide) {
             const rVal = Math.floor(Math.random() * 255)
             const gVal = Math.floor(Math.random() * 255)
             const bVal = Math.floor(Math.random() * 255)
+            let currentOpacity = parseFloat(div.style.opacity)
+            let newOpacity = 1
+            if (isNaN(currentOpacity)) {
+                newOpacity = 0.1
+            } else if (currentOpacity != 1) {
+                newOpacity = currentOpacity += 0.1
+            }
             div.style.backgroundColor = `rgb(${rVal},${gVal},${bVal})`
+            div.style.opacity = newOpacity
         })
 
         container.appendChild(div)
