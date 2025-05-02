@@ -4,14 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .container {
+    border: 1px black solid;
     display: flex;
     flex-wrap: wrap;
+    width: 1200px;
+    height: 1200px;
 }
 
 .square {
     /* flex: 1; */
     border: 1px black solid;
-    width: calc(100vw/16);
-    height: calc(100vh/16);
+    width: 6.25%;
+    height: 6.25%;
 }
