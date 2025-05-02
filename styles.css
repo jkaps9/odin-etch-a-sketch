@@ -6,9 +6,20 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     min-height: 100vh;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border-radius: 12px;
+    border: 1px white solid;
 }
 
 .container {
@@ -17,11 +28,4 @@ body {
     flex-wrap: wrap;
     width: 1200px;
     height: 1200px;
-}
-
-.square {
-    /* flex: 1; */
-    border: 1px black solid;
-    width: 6.25%;
-    height: 6.25%;
 }
