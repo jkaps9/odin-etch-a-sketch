@@ -26,7 +26,7 @@ button {
     border: 1px black solid;
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
+    width: 95vw;
     height: 90vh;
     margin: 0 auto;
 }
