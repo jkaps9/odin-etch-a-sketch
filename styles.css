@@ -27,6 +27,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     width: 95vw;
-    height: 90vh;
+    height: 95vw;
     margin: 0 auto;
 }
